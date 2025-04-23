@@ -112,7 +112,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.image("https://cdn-icons-png.flaticon.com/512/4712/4712035.png", width=120)
-st.title("🔐 Leak Detector M7MAD")
+st.title("🔐 لعيون مشمش")
 st.caption("Cybersecurity made smarter. Scan text, PDF, or Excel for leaks.")
 
 option = st.radio("Choose input type:", ["Upload File", "Direct Text"])
