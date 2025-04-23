@@ -89,7 +89,7 @@ def generate_excel_report(result_dict):
     return output
 
 # ============ Streamlit ============
-st.set_page_config(page_title="Leak Detector AI M7MAD", layout="centered")
+st.set_page_config(page_title="Leak Detector  M7MAD", layout="centered")
 st.markdown("""
     <style>
     .reportview-container {
@@ -112,7 +112,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.image("https://cdn-icons-png.flaticon.com/512/4712/4712035.png", width=120)
-st.title("🔐 Leak Detector AI")
+st.title("🔐 Leak Detector M7MAD")
 st.caption("Cybersecurity made smarter. Scan text, PDF, or Excel for leaks.")
 
 option = st.radio("Choose input type:", ["Upload File", "Direct Text"])
