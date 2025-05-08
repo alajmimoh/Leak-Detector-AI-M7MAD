@@ -157,3 +157,9 @@ if text:
     st.markdown(href_excel, unsafe_allow_html=True)
 else:
     st.info("Please provide text or upload a file to start scanning.")
+
+
+# Footer
+st.markdown("---")
+st.markdown("<p style='text-align: center; color: grey;'>Developed by محمد 🚀 </p>", unsafe_allow_html=True)
+
