@@ -6,7 +6,6 @@ from io import BytesIO
 import streamlit as st
 import base64
 
-# ================== وظائف التحليل ==================
 
 def detect_emails(text):
     return re.findall(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+", text)
@@ -47,7 +46,6 @@ def extract_text_from_excel(file):
     df = pd.read_excel(file, engine='openpyxl')
     return df.astype(str).to_string(index=False)
 
-# ================== توليد التقارير ==================
 def generate_pdf_report(result_dict):
     pdf = FPDF()
     pdf.add_page()
@@ -70,7 +68,6 @@ def generate_pdf_report(result_dict):
             pdf.set_font("Arial", 'B', size=12)
             pdf.cell(200, 10, txt=f"{key}: {values}", ln=True)
 
-    # ✅ هذا السطر داخل الدالة
     return pdf.output(dest='S').encode('latin-1', errors='ignore')
 
 
